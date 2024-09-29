@@ -1,0 +1,27 @@
+Linear Regression Code generated from BigML:
+# Requires BigML Python bindings
+#
+# Install via: pip install bigml
+#
+# or clone it:
+#   git clone https://github.com/bigmlcom/python.git
+
+from bigml.linear import LinearRegression
+from bigml.api import BigML
+
+# Downloads and generates a local version of the linear regression,
+# if it hasn't been downloaded previously.
+
+linearregression = LinearRegression('linearregression/6132380199dfe7073f00398b',
+                  api=BigML("momin2545",
+                            "a581b6aae01ad997350646c9e5188fba79023fa1",
+                            domain="bigml.io"))
+
+# To make predictions fill the desired input_data
+# in next line. All fields are compulsory if they don't have
+# missing values.
+input_data = {
+    "gender": "F",
+    "performance": "Good"
+}
+linearregression.predict(input_data)

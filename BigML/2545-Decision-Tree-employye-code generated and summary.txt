@@ -1,0 +1,96 @@
+Resort Employee decision tree code generated from BigML:
+def predict_performance(salary=None,
+                        gender=None):
+    """ Predictor for performance from model/6132389fe4279b24a10155d9
+        Predictive model by BigML - Machine Learning Made Easy
+    """
+    if (gender is None):
+        return u'Good'
+    if (gender == u'F'):
+        if (salary is None):
+            return u'Average'
+        if (salary > 61250):
+            if (salary > 74000):
+                return u'Good'
+            if (salary <= 74000):
+                if (salary > 67000):
+                    return u'Good'
+                if (salary <= 67000):
+                    return u'Good'
+        if (salary <= 61250):
+            if (salary > 19000):
+                return u'Average'
+            if (salary <= 19000):
+                return u'Poor'
+    if (gender == u'M'):
+        if (salary is None):
+            return u'Good'
+        if (salary > 61750):
+            return u'Good'
+        if (salary <= 61750):
+            if (salary > 58250):
+                return u'Poor'
+            if (salary <= 58250):
+                if (salary > 53500):
+                    return u'Good'
+                if (salary <= 53500):
+                    if (salary > 31500):
+                        if (salary > 43750):
+                            if (salary > 49750):
+                                return u'Poor'
+                            if (salary <= 49750):
+                                return u'Good'
+                        if (salary <= 43750):
+                            return u'Poor'
+                    if (salary <= 31500):
+                        return u'Good'
+
+
+Resort Decision tree Summary report:
+Data distribution:
+    Average: 32.00% (8 instances)
+    Good: 52.00% (13 instances)
+    Poor: 16.00% (4 instances)
+
+
+Predicted distribution:
+    Average: 28.00% (7 instances)
+    Good: 56.00% (14 instances)
+    Poor: 16.00% (4 instances)
+
+
+Field importance:
+    1. salary: 61.59%
+    2. gender: 38.41%
+
+
+Rules summary:
+
+
+Average: (data 32.00% / prediction 28.00%) gender = F and 19000 < salary <= 61250  [Confidence: 64.57%]
+
+
+Good: (data 52.00% / prediction 56.00%) 
+    · 35.71%: gender = M and salary > 61750 [Confidence: 56.55%]
+
+    · 14.29%: gender = M and 53500 < salary <= 58250  [Confidence: 34.24%]
+
+    · 14.29%: gender = F and 67000 < salary <= 74000  [Confidence: 9.45%; impurity: 0.25%]
+
+    · 14.29%: gender = F and salary > 74000 [Confidence: 34.24%]
+
+    · 7.14%: gender = M and salary <= 31500 [Confidence: 20.65%]
+
+    · 7.14%: gender = M and 43750 < salary <= 49750  [Confidence: 20.65%]
+
+    · 7.14%: gender = F and 61250 < salary <= 67000  [Confidence: 20.65%]
+
+
+Poor: (data 16.00% / prediction 16.00%) 
+    · 25.00%: gender = M and 31500 < salary <= 43750  [Confidence: 20.65%]
+
+    · 25.00%: gender = M and 49750 < salary <= 53500  [Confidence: 20.65%]
+
+    · 25.00%: gender = M and 58250 < salary <= 61750  [Confidence: 20.65%]
+
+    · 25.00%: gender = F and salary <= 19000 [Confidence: 20.65%]

@@ -1,0 +1,344 @@
+Decision Tree Code generated from BigML:
+
+def predict_satisfaction_rate(gender=None,
+                              home_division=None,
+                              marital_status=None,
+                              package_type=None,
+                              package_price_tk_=None):
+    """ Predictor for Satisfaction-Rate from model/613235699193b91733014d9f
+        Predictive model by BigML - Machine Learning Made Easy
+    """
+    if (package_price_tk_ is None):
+        return 4.02
+    if (package_price_tk_ > 3250):
+        if (gender is None):
+            return 4.53333
+        if (gender == u'Male'):
+            if (home_division is None):
+                return 4.3
+            if (home_division == u'Barishal'):
+                if (marital_status is None):
+                    return 4
+                if (marital_status == u'Married'):
+                    return 5
+                if (marital_status == u'Single'):
+                    return 3
+            if (home_division != u'Barishal'):
+                if (home_division == u'Dhaka'):
+                    return 4
+                if (home_division != u'Dhaka'):
+                    if (home_division == u'Rangpur'):
+                        return 4
+                    if (home_division != u'Rangpur'):
+                        if (marital_status is None):
+                            return 4.5
+                        if (marital_status == u'Married'):
+                            if (home_division == u'Sylhet'):
+                                return 4
+                            if (home_division != u'Sylhet'):
+                                return 4.5
+                        if (marital_status == u'Single'):
+                            if (home_division == u'Sylhet'):
+                                return 5
+                            if (home_division != u'Sylhet'):
+                                return 4.5
+        if (gender == u'Female'):
+            return 5
+    if (package_price_tk_ <= 3250):
+        if (home_division is None):
+            return 3.92941
+        if (home_division == u'Chittagong'):
+            if (package_type is None):
+                return 4.8
+            if (package_type == u'Basic'):
+                return 4.5
+            if (package_type != u'Basic'):
+                return 5
+        if (home_division != u'Chittagong'):
+            if (marital_status is None):
+                return 3.875
+            if (marital_status == u'Married'):
+                if (package_type is None):
+                    return 3.68889
+                if (package_type == u'Premium'):
+                    if (home_division == u'Dinajpur'):
+                        return 5
+                    if (home_division != u'Dinajpur'):
+                        if (home_division == u'Rajshahi'):
+                            return 5
+                        if (home_division != u'Rajshahi'):
+                            if (home_division == u'Sylhet'):
+                                return 3
+                            if (home_division != u'Sylhet'):
+                                if (home_division == u'Khulna'):
+                                    return 3
+                                if (home_division != u'Khulna'):
+                                    return 4
+                if (package_type != u'Premium'):
+                    if (home_division == u'Rajshahi'):
+                        return 2
+                    if (home_division != u'Rajshahi'):
+                        if (home_division == u'Dhaka'):
+                            if (package_type == u'Standard'):
+                                if (gender is None):
+                                    return 3.33333
+                                if (gender == u'Male'):
+                                    return 3.25
+                                if (gender == u'Female'):
+                                    return 3.5
+                            if (package_type != u'Standard'):
+                                if (gender is None):
+                                    return 2.5
+                                if (gender == u'Male'):
+                                    return 2
+                                if (gender == u'Female'):
+                                    return 3
+                        if (home_division != u'Dhaka'):
+                            if (package_type == u'Standard'):
+                                if (home_division == u'Sylhet'):
+                                    return 5
+                                if (home_division != u'Sylhet'):
+                                    if (home_division == u'Dinajpur'):
+                                        return 5
+                                    if (home_division != u'Dinajpur'):
+                                        if (gender is None):
+                                            return 3.27273
+                                        if (gender == u'Male'):
+                                            if (home_division == u'Barishal'):
+                                                return 4
+                                            if (home_division != u'Barishal'):
+                                                if (home_division == u'Mymensingh'):
+                                                    return 3
+                                                if (home_division != u'Mymensingh'):
+                                                    return 3.5
+                                        if (gender == u'Female'):
+                                            if (home_division == u'Cumilla'):
+                                                return 2
+                                            if (home_division != u'Cumilla'):
+                                                return 3
+                            if (package_type != u'Standard'):
+                                if (home_division == u'Khulna'):
+                                    return 3
+                                if (home_division != u'Khulna'):
+                                    if (home_division == u'Dinajpur'):
+                                        return 3
+                                    if (home_division != u'Dinajpur'):
+                                        if (gender is None):
+                                            return 4.5
+                                        if (gender == u'Male'):
+                                            if (home_division == u'Mymensingh'):
+                                                return 4.33333
+                                            if (home_division != u'Mymensingh'):
+                                                return 4.5
+                                        if (gender == u'Female'):
+                                            return 5
+            if (marital_status == u'Single'):
+                if (gender is None):
+                    return 4.11429
+                if (gender == u'Male'):
+                    if (home_division == u'Rangpur'):
+                        if (package_type is None):
+                            return 3.8
+                        if (package_type == u'Basic'):
+                            return 3.5
+                        if (package_type != u'Basic'):
+                            return 4
+                    if (home_division != u'Rangpur'):
+                        if (home_division == u'Barishal'):
+                            return 4
+                        if (home_division != u'Barishal'):
+                            if (package_type is None):
+                                return 3.25
+                            if (package_type == u'Standard'):
+                                if (home_division == u'Sylhet'):
+                                    return 4
+                                if (home_division != u'Sylhet'):
+                                    return 3
+                            if (package_type != u'Standard'):
+                                return 3
+                if (gender == u'Female'):
+                    if (home_division == u'Rajshahi'):
+                        return 3
+                    if (home_division != u'Rajshahi'):
+                        if (home_division == u'Dinajpur'):
+                            if (package_type is None):
+                                return 3.5
+                            if (package_type == u'Premium'):
+                                return 3
+                            if (package_type != u'Premium'):
+                                return 4
+                        if (home_division != u'Dinajpur'):
+                            if (home_division == u'Khulna'):
+                                return 5
+                            if (home_division != u'Khulna'):
+                                if (package_type is None):
+                                    return 4.36842
+                                if (package_type == u'Basic'):
+                                    if (home_division == u'Rangpur'):
+                                        return 4
+                                    if (home_division != u'Rangpur'):
+                                        return 5
+                                if (package_type != u'Basic'):
+                                    if (home_division == u'Rangpur'):
+                                        return 5
+                                    if (home_division != u'Rangpur'):
+                                        if (home_division == u'Mymensingh'):
+                                            return 5
+                                        if (home_division != u'Mymensingh'):
+                                            if (home_division == u'Sylhet'):
+                                                if (package_type == u'Standard'):
+                                                    return 4.25
+                                                if (package_type != u'Standard'):
+                                                    return 4.2
+                                            if (home_division != u'Sylhet'):
+                                                return 4
+
+
+
+Decision Tree Summary:
+Data distribution:
+    2: 5.00% (5 instances)
+    3: 23.00% (23 instances)
+    4: 37.00% (37 instances)
+    5: 35.00% (35 instances)
+
+
+Predicted distribution:
+    2: 3.00% (3 instances)
+    3: 15.00% (15 instances)
+    3.25: 4.00% (4 instances)
+    3.5: 8.00% (8 instances)
+    4: 27.00% (27 instances)
+    4.2: 5.00% (5 instances)
+    4.25: 4.00% (4 instances)
+    4.33333: 3.00% (3 instances)
+    4.5: 8.00% (8 instances)
+    5: 23.00% (23 instances)
+
+
+Field importance:
+    1. Home-Division: 55.55%
+    2. ﻿Gender: 13.93%
+    3. Package-Type: 12.31%
+    4. Marital-Status: 10.05%
+    5. Package-Price(TK): 8.16%
+
+
+Rules summary:
+
+
+2: (data 5.00% / prediction 3.00%) Package-Price(TK) <= 3250 and Home-Division != Chittagong and Marital-Status = Married and Package-Type != Premium
+    · 33.33%: Package-Price(TK) <= 3250 and Home-Division = Cumilla and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Female [Error: 3.89486]
+
+    · 33.33%: Package-Price(TK) <= 3250 and Home-Division = Dhaka and Marital-Status = Married and Package-Type != Premium or Standard and ﻿Gender = Male [Error: 5.26764]
+
+    · 33.33%: Package-Price(TK) <= 3250 and Home-Division = Rajshahi and Marital-Status = Married and Package-Type != Premium [Error: 1.71403]
+
+
+3: (data 23.00% / prediction 15.00%) 
+    · 20.00%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rajshahi or Dhaka or Sylhet or Dinajpur or Cumilla and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Female [Error: 5.08228]
+
+    · 13.33%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rangpur or Barishal and Marital-Status = Single and ﻿Gender = Male and Package-Type != Standard [Error: 1.43827]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Dinajpur and Marital-Status = Single and ﻿Gender = Female and Package-Type = Premium [Error: 5.26764]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Rajshahi and Marital-Status = Single and ﻿Gender = Female [Error: 1.33504]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rangpur or Barishal or Sylhet and Marital-Status = Single and ﻿Gender = Male and Package-Type = Standard [Error: 5.26764]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Dinajpur and Marital-Status = Married and Package-Type != Premium or Standard [Error: 2.18953]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Khulna and Marital-Status = Married and Package-Type != Premium or Standard [Error: 2.26126]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Mymensingh and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Male [Error: 1.92072]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Dhaka and Marital-Status = Married and Package-Type != Premium or Standard and ﻿Gender = Female [Error: 5.26764]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Khulna and Marital-Status = Married and Package-Type = Premium [Error: 1.51877]
+
+    · 6.67%: Package-Price(TK) <= 3250 and Home-Division = Sylhet and Marital-Status = Married and Package-Type = Premium [Error: 1.51726]
+
+    · 6.67%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division = Barishal and Marital-Status = Single [Error: 10.53528]
+
+
+3.25: (data 0.00% / prediction 4.00%) Package-Price(TK) <= 3250 and Home-Division = Dhaka and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Male [Confidence: 203.40%; impurity: 0.19%]
+
+
+3.5: (data 0.00% / prediction 8.00%) Package-Price(TK) <= 3250 and Home-Division != Chittagong
+    · 50.00%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rajshahi or Dhaka or Sylhet or Dinajpur or Barishal or Mymensingh and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Male [Error: 2.34869]
+
+    · 25.00%: Package-Price(TK) <= 3250 and Home-Division = Rangpur and Marital-Status = Single and ﻿Gender = Male and Package-Type = Basic [Error: 5.26764]
+
+    · 25.00%: Package-Price(TK) <= 3250 and Home-Division = Dhaka and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Female [Error: 15.80292]
+
+
+4: (data 37.00% / prediction 27.00%) 
+    · 40.74%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Dinajpur or Rajshahi or Sylhet or Khulna and Marital-Status = Married and Package-Type = Premium [Error: 1.48768]
+
+    · 14.81%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rajshahi or Dinajpur or Khulna or Rangpur or Mymensingh or Sylhet and Marital-Status = Single and ﻿Gender = Female and Package-Type != Basic [Error: 3.32155]
+
+    · 11.11%: Package-Price(TK) <= 3250 and Home-Division = Rangpur and Marital-Status = Single and ﻿Gender = Male and Package-Type != Basic [Error: 0.90544]
+
+    · 7.41%: Package-Price(TK) <= 3250 and Home-Division = Barishal and Marital-Status = Married and Package-Type = Standard and ﻿Gender = Male [Error: 1.09476]
+
+    · 3.70%: Package-Price(TK) <= 3250 and Home-Division = Rangpur and Marital-Status = Single and ﻿Gender = Female and Package-Type = Basic [Error: 2.03402]
+
+    · 3.70%: Package-Price(TK) <= 3250 and Home-Division = Dinajpur and Marital-Status = Single and ﻿Gender = Female and Package-Type != Premium [Error: 5.26764]
+
+    · 3.70%: Package-Price(TK) <= 3250 and Home-Division = Sylhet and Marital-Status = Single and ﻿Gender = Male and Package-Type = Standard [Error: 5.26764]
+
+    · 3.70%: Package-Price(TK) <= 3250 and Home-Division = Barishal and Marital-Status = Single and ﻿Gender = Male [Error: 1.92072]
+
+    · 3.70%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division = Sylhet and Marital-Status = Married [Error: 2.93426]
+
+    · 3.70%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division = Rangpur [Error: 1.54823]
+
+    · 3.70%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division = Dhaka [Error: 1.40237]
+
+
+4.2: (data 0.00% / prediction 5.00%) Package-Price(TK) <= 3250 and Home-Division = Sylhet and Marital-Status = Single and ﻿Gender = Female and Package-Type != Basic or Standard [Confidence: 293.39%; impurity: 0.32%]
+
+
+4.25: (data 0.00% / prediction 4.00%) Package-Price(TK) <= 3250 and Home-Division = Sylhet and Marital-Status = Single and ﻿Gender = Female and Package-Type = Standard [Confidence: 203.40%; impurity: 0.19%]
+
+
+4.33333: (data 0.00% / prediction 3.00%) Package-Price(TK) <= 3250 and Home-Division = Mymensingh and Marital-Status = Married and Package-Type != Premium or Standard and ﻿Gender = Male [Confidence: 293.43%; impurity: 0.22%]
+
+
+4.5: (data 0.00% / prediction 8.00%) 
+    · 25.00%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rajshahi or Dhaka or Khulna or Dinajpur or Mymensingh and Marital-Status = Married and Package-Type != Premium or Standard and ﻿Gender = Male [Error: 5.26764]
+
+    · 25.00%: Package-Price(TK) <= 3250 and Home-Division = Chittagong and Package-Type = Basic [Error: 5.26764]
+
+    · 25.00%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division != Barishal or Dhaka or Rangpur or Sylhet and Marital-Status = Single [Error: 5.26764]
+
+    · 25.00%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division != Barishal or Dhaka or Rangpur or Sylhet and Marital-Status = Married [Error: 5.26764]
+
+
+5: (data 35.00% / prediction 23.00%) 
+    · 21.74%: Package-Price(TK) > 3250 and ﻿Gender = Female [Error: 0.59851]
+
+    · 13.04%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rajshahi or Dinajpur or Khulna or Rangpur and Marital-Status = Single and ﻿Gender = Female and Package-Type = Basic [Error: 1.17434]
+
+    · 13.04%: Package-Price(TK) <= 3250 and Home-Division = Khulna and Marital-Status = Single and ﻿Gender = Female [Error: 0.7166]
+
+    · 13.04%: Package-Price(TK) <= 3250 and Home-Division = Chittagong and Package-Type != Basic [Error: 0.90544]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division = Mymensingh and Marital-Status = Single and ﻿Gender = Female and Package-Type != Basic [Error: 1.49889]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division = Rangpur and Marital-Status = Single and ﻿Gender = Female and Package-Type != Basic [Error: 1.47171]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division != Chittagong or Rajshahi or Dhaka or Khulna or Dinajpur and Marital-Status = Married and Package-Type != Premium or Standard and ﻿Gender = Female [Error: 1.72408]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division = Dinajpur and Marital-Status = Married and Package-Type = Standard [Error: 2.0453]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division = Sylhet and Marital-Status = Married and Package-Type = Standard [Error: 2.13118]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division = Rajshahi and Marital-Status = Married and Package-Type = Premium [Error: 1.5648]
+
+    · 4.35%: Package-Price(TK) <= 3250 and Home-Division = Dinajpur and Marital-Status = Married and Package-Type = Premium [Error: 1.58088]
+
+    · 4.35%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division = Sylhet and Marital-Status = Single [Error: 2.93426]
+
+    · 4.35%: Package-Price(TK) > 3250 and ﻿Gender = Male and Home-Division = Barishal and Marital-Status = Married [Error: 10.53528]
+DATA DISTRIBUTION

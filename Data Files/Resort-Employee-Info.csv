@@ -1,0 +1,26 @@
+﻿ssn,lastname,firstname,hiredate,salary,gender,performance,positionID
+000-01-0000,Milgrom,Patricia,2004-10-01,57500,F,Average,Manager
+000-02-2222,Adams,Sandy,2001-01-15,19500,F,Average,Staff
+109-87-6543,Wood,Emily,1997-03-12,69000,F,Average,Manager
+109-87-6544,Foster,Harold,2005-08-14,55000,M,Good,Account Representative
+111-12-1111,Johnson,James,1996-05-03,47500,M,Good,Account Representative
+123-45-6789,Coulter,Tracy,1993-02-14,100000,F,Good,Manager
+222-23-2222,Marlin,Bill,1977-03-28,125000,M,Good,Manager
+222-52-5555,Smith,Mary,2006-01-01,42500,F,Average,Account Representative
+245-67-8910,Johanson,Sandy,2005-06-02,69000,F,Good,Staff
+333-34-3333,Manin,Emily,2000-12-01,49500,F,Average,Account Representative
+333-43-4444,Smith,Frank,1991-01-29,65000,M,Good,Account Representative
+333-66-1234,Brown,Marietta,2001-03-07,18500,F,Poor,Staff
+335-55-5533,Jones,Holly,1986-04-08,65000,F,Good,Manager
+432-19-8765,Bronson,Paul,2003-11-20,58000,M,Good,Manager
+444-45-4444,Frank,Vernon,1985-04-10,75000,M,Good,Account Representative
+464-64-4466,Webster,David,1991-01-29,58500,M,Poor,Manager
+500-50-0505,Rodriguez,Jose,1998-07-16,150000,M,Good,Executive
+555-22-3333,Rubin,Patricia,2003-07-25,45000,F,Average,Account Representative
+555-56-5555,Charles,Kenneth,1998-06-18,40000,M,Poor,Staff
+612-99-1111,Roberts,Melissa,1984-05-14,79000,F,Good,Manager
+625-62-6262,Holmes,Holly,1992-06-15,55000,F,Average,Manager
+767-74-7373,Martin,William,2006-08-26,23000,M,Good,Staff
+776-67-6666,Adamson,David,2002-10-04,52000,M,Poor,Manager
+777-78-7777,Marder,Kelly,1997-09-25,38500,F,Average,Account Representative
+925-45-7116,Whitehead,David,1980-07-25,175000,M,Good,Executive
